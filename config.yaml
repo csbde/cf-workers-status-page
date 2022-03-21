@@ -1,23 +1,23 @@
 settings:
-  title: 'Status Page'
+  title: '联盟服务器状态'
   url: 'http://status.esnnn.com' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
+  allmonitorsOperational: '已检查所有服务器'
+  notAllmonitorsOperational: '已检查部分服务器'
+  monitorLabelOperational: '已检查'
+  monitorLabelNotOperational: '未检查'
+  monitorLabelNoData: '没有数据'
+  dayInHistogramNoData: '没有数据'
+  dayInHistogramOperational: '检查正常'
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
   - id: api2 # unique identifier
-    name: DF2Server
-    description: 'You write code. They handle the rest.' # default=empty
+    name: API服务
+    description: '用于提供API服务' # default=empty
     url: 'http://api2.esnnn.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -25,15 +25,22 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: df1
-    name: df1
-    description: 'Built for anything connected to the Internet.'
+    name: 流量服务器
+    description: '流量专用服务器.'
     url: 'http://api.esnnn.com'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
   - id: cmy
-    name: cmyserver
+    name: CMY服务器
+    description: '控制端服务器，包含一些基础服务.'
     url: 'http://cmy.esnnn.com/'
+    method: GET
+    expectStatus: 200
+  - id: phone
+    name: 新机服务器
+    description: '提供新机服务.'
+    url: 'http://fh.esnnn.com/'
     method: GET
     expectStatus: 200
