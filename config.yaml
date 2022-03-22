@@ -2,7 +2,7 @@ settings:
   title: '联盟服务器状态'
   url: 'http://status.esnnn.com' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: '已检查所有服务器'
@@ -30,7 +30,7 @@ monitors:
     url: 'http://api.esnnn.com'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
 
   - id: cmy
     name: CMY服务器
@@ -38,9 +38,11 @@ monitors:
     url: 'http://cmy.esnnn.com/'
     method: GET
     expectStatus: 200
+    linkable: false 
   - id: phone
     name: 新机服务器
     description: '提供新机服务.'
     url: 'http://fh.esnnn.com/'
     method: GET
     expectStatus: 200
+    linkable: false 
