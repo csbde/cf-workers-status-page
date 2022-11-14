@@ -23,7 +23,6 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
-
   - id: cmy
     name: CMY服务器
     description: '控制端服务器，包含一些基础服务.'
