@@ -15,21 +15,13 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: api2 # unique identifier
+  - id: df3 # unique identifier
     name: API服务
     description: '用于提供API服务' # default=empty
-    url: 'http://api2.esnnn.com/' # URL to fetch
+    url: 'http://gl.esnnn.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: df1
-    name: 流量服务器
-    description: '流量专用服务器.'
-    url: 'http://api.esnnn.com'
-    method: GET
-    expectStatus: 200
     linkable: false # allows the title to be a link, default=true
 
   - id: cmy
