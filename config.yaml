@@ -32,14 +32,14 @@ monitors:
     linkable: false 
   - id: df4
     name: df4独立服务器
-    description: '提供新机服务.'
+    description: 'df4独立服务器.'
     url: 'http://142.54.189.18:8007'
     method: GET
     expectStatus: 200
     linkable: false 
   - id: df5
     name: df5独立服务器
-    description: '提供新机服务.'
+    description: 'df5独立服务器.'
     url: 'http://142.54.189.186:8007/'
     method: GET
     expectStatus: 200
@@ -53,21 +53,21 @@ monitors:
     linkable: false 
   - id: TXs3XD
     name: 腾讯S3成都
-    description: '提供新机服务.'
+    description: '腾讯S3成都.'
     url: 'http://1.14.60.131:8700/'
     method: GET
     expectStatus: 404
     linkable: false 
   - id: ProductServer
     name: S0移动主服务器
-    description: '提供新机服务.'
+    description: 'S0移动主服务器.'
     url: 'http://112.18.10.71:8007/'
     method: GET
     expectStatus: 200
     linkable: false 
   - id: hs100
     name: hs100备用服务器
-    description: '提供新机服务.'
+    description: 'hs100备用服务器.'
     url: 'https://hs100.zoogooo.com'
     method: GET
     expectStatus: 404
