@@ -33,7 +33,7 @@ monitors:
   - id: df4
     name: df4独立服务器
     description: 'df4独立服务器.'
-    url: 'http://142.54.189.18:8007'
+    url: 'http://173.208.182.218:8007'
     method: GET
     expectStatus: 200
     linkable: false 
