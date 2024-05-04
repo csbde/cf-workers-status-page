@@ -3,7 +3,7 @@ settings:
   url: 'http://status.esnnn.com' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 30 # number of days you want to display in histogram
-  collectResponseTimes: true # collects avg response times from CRON locations
+  collectResponseTimes: false # collects avg response times from CRON locations
 
   allmonitorsOperational: '已检查所有服务器'
   notAllmonitorsOperational: '已检查部分服务器'
